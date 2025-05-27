@@ -96,6 +96,8 @@ Rails.application.routes.draw do
           resources :dashboard_apps, only: [:index, :show, :create, :update, :destroy]
           namespace :channels do
             resource :twilio_channel, only: [:create]
+            # Route for Asterisk channel outgoing calls
+            post 'asterisk/:inbox_id/originate_call', to: 'channels/asterisk#originate_call', as: 'asterisk_originate_call'
           end
           resources :conversations, only: [:index, :create, :show, :update] do
             collection do

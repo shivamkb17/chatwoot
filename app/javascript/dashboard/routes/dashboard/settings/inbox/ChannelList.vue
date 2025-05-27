@@ -36,6 +36,14 @@ export default {
         { key: 'telegram', name: 'Telegram' },
         { key: 'line', name: 'Line' },
         { key: 'instagram', name: 'Instagram' },
+        {
+          key: 'asterisk',
+          name: 'Asterisk',
+          icon: 'ion-volume-high-outline', // Placeholder icon
+          label: 'ASTERISK.LABEL', // Assumes i18n key will be added
+          description: 'ASTERISK.DESCRIPTION', // Assumes i18n key will be added
+          route: 'asterisk', // Route name for Asterisk channel setup
+        },
       ];
     },
     ...mapGetters({

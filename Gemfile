@@ -100,6 +100,8 @@ gem 'slack-ruby-client', '~> 2.5.2'
 # for dialogflow integrations
 gem 'google-cloud-dialogflow-v2', '>= 0.24.0'
 gem 'grpc'
+# for Asterisk integration
+gem 'ruby-ami'
 # Translate integrations
 # 'google-cloud-translate' gem depends on faraday 2.0 version
 # this dependency breaks the slack-ruby-client gem
